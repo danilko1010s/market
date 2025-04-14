@@ -1,0 +1,143 @@
+body {
+    background-color: #f5f5f5;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.title {
+    background: #ff4d4d;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.items {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the blocks horizontally */
+    gap: 20px; /* Maintain spacing between blocks */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    width: 100%;
+}
+
+.item {
+    width: 300px; /* Set a fixed width for the blocks */
+    height: 300px;
+    margin: 0 auto; /* Ensure the blocks stay centered */
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background: white;
+    text-align: center;
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.item-image {
+    max-width: 100%;
+    max-height: 120px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.buy-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.buy-button:hover {
+    background-color: #e63939;
+}
+
+.item-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.item-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.rating-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.item-prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+.current-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+.discount-price {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.discount-price span {
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+.contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.address {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.license {
+    font-size: 14px;
+    text-align: justify;
+    color: rgb(120, 120, 120);
+}
